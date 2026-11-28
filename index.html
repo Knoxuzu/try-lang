@@ -1,49 +1,41 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <title>a somewhere.</title>
-
-    <meta name="description" content="An exploration of moments, memories, and the spaces between them."/>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="styles/style.css" />
-  </head>
-
-  <body>
-    <div class="page">
-      <header class="bar top">
-        <span class="brand">a somewhere.</span>
-        <span class="progress" id="progress" role="status" aria-live="polite">01 / 07</span>
-      </header>
-
-      <main id="stage" class="stage">
-        <svg id="art" class="art" viewBox="0 0 300 170" role="img" aria-label="" aria-hidden="true" focusable="false"></svg>
-
-        <div id="text" class="text"></div>
-
-        <section id="reply" class="reply" hidden>
-          <form id="form" novalidate>
-            <label for="msg" class="sr">Your response</label>
-            <textarea id="msg" name="message" rows="6" maxlength="5000" placeholder="Write whatever you'd like to say..."></textarea>
-            <p id="status" class="status" role="status" aria-live="polite"></p>
-            <button type="submit" class="btn" id="send">Send response</button>
-            <p class="note">Your message will be sent to my email.</p>
-          </form>          
-        </section>
-
-        <nav class="nav" aria-label="Story navigation">
-          <button type="button" class="btn ghost" id="back" hidden>← Back</button>
-          <button type="button" class="btn" id="next">Continue →</button>
-        </nav>
-      </main>
-      
-      <footer class="bar bottom">A STORY TOLD BETWEEN THE LINES</footer>
-    </div>
-    <script src="scripts/main.js"></script>
-  </body>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>a somewhere.</title>
+<meta name="description" content="An exploration of moments, memories, and the spaces between them.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<div class="page">
+  <header class="bar top">
+    <span class="brand">a somewhere.</span>
+    <span class="progress" id="progress" role="status" aria-live="polite">01 / 07</span>
+  </header>
+  <main id="stage" class="stage">
+    <noscript><p style="padding:24px 0">This small story needs JavaScript to be read. Please enable it and reload.</p></noscript>
+    <svg id="art" class="art" viewBox="0 0 300 170" role="img" aria-label="" aria-hidden="true" focusable="false"></svg>
+    <div id="text" class="text"></div>
+    <section id="reply" class="reply" hidden>
+      <form id="form" novalidate>
+        <label for="msg" class="sr">Your response</label>
+        <textarea id="msg" name="message" rows="6" maxlength="5000" placeholder="Write whatever you'd like to say..."></textarea>
+        <p id="status" class="status" role="status" aria-live="polite"></p>
+        <button type="submit" class="btn" id="send">Send response</button>
+        <p class="note">Your message will be sent to my email.</p>
+      </form>
+    </section>
+    <nav class="nav" aria-label="Story navigation">
+      <button type="button" class="btn ghost" id="back" hidden>← Back</button>
+      <button type="button" class="btn" id="next">Continue →</button>
+    </nav>
+  </main>
+  <footer class="bar bottom">A STORY TOLD BETWEEN THE LINES</footer>
+</div>
+<script src="scripts/main.js"></script>
+</body>
 </html>
